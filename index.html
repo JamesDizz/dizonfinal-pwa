@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Memes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="container">
+    <!-- Search form -->
+    <div id="searchForm">
+      <h1>Want Memes? ;p</h1>
+      <input type="text" id="searchInput" placeholder="Search for memes..." />
+      <button id="fetchDataBtn">Fetch Memes</button>
+    </div>
+
+    <!-- Display memes -->
+    <div id="dataDisplay"></div>
+
+    <!-- Back button (hidden by default) -->
+    <button id="backToSearchBtn" style="display: none;">Back to Search</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

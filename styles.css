@@ -1,0 +1,126 @@
+/* Overall background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;  /* Dark background */
+    color: #e0e0e0;             /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 20px;  /* Adds padding for smaller screens */
+    box-sizing: border-box;
+  }
+  
+  /* Centered container for content */
+  .container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1e1e1e;  /* Slightly lighter background for content area */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px; /* Set a max width for larger screens */
+  }
+  
+  /* Form and buttons styling */
+  input, button {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 18px;
+    margin: 8px 0; /* Add space between input and button */
+    border: 2px solid #6200ea;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  input {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  button {
+    background-color: #6200ea;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #3700b3;  /* Darker purple on hover */
+  }
+  
+  /* Meme image styling */
+  .meme img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow around the image */
+  }
+  
+  /* Caption styling */
+  .meme p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #bbb;  /* Light grey caption color */
+    margin-top: 10px;
+  }
+  
+  /* Data display container */
+  #dataDisplay {
+    margin-top: 20px;
+  }
+  
+  /* Back to Search button */
+  #backToSearchBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6200ea;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+  }
+  
+  #backToSearchBtn:hover {
+    background-color: #3700b3;
+  }
+  
+  /* Hide search form when displaying meme */
+  #searchForm {
+    display: block;
+  }
+  
+  /* Make layout responsive */
+  @media (max-width: 600px) {
+    /* Adjustments for smaller screens (e.g., phones) */
+    body {
+      padding: 10px;  /* Less padding on small devices */
+    }
+  
+    .container {
+      width: 100%;
+      padding: 15px; /* Reduced padding */
+    }
+  
+    input, button {
+      font-size: 16px;  /* Smaller font size for mobile */
+    }
+  
+    #backToSearchBtn {
+      font-size: 14px;  /* Smaller font for the back button on mobile */
+    }
+  }
+  
+  @media (min-width: 601px) {
+    /* Adjustments for tablets and above */
+    input, button {
+      font-size: 18px;  /* Larger font for tablets and above */
+    }
+  }
+  
